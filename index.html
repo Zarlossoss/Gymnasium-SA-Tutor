@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gymnasium Sachsen-Anhalt Tutor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <style>
+      :root {
+        --apple-bg: #f5f5f7;
+        --apple-card: #ffffff;
+      }
+      body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        background-color: var(--apple-bg);
+        color: #1d1d1f;
+        -webkit-font-smoothing: antialiased;
+        scroll-behavior: smooth;
+        line-height: 1.5;
+      }
+      
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #d1d1d6;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #a1a1aa;
+      }
+      
+      .animate-fade-in {
+        animation: fadeIn 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .animate-slide-up {
+        animation: slideUp 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+      }
+      
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      @keyframes slideUp {
+        from { transform: translateY(20px); opacity: 0; }
+        to { transform: translateY(0); opacity: 1; }
+      }
+
+      /* Enhanced High-Contrast Prose for Superior Readability */
+      .prose {
+        color: #1d1d1f;
+        max-width: none;
+      }
+      .prose h1, .prose h2, .prose h3, .prose h4 {
+        color: #000000;
+        font-weight: 700;
+        letter-spacing: -0.025em;
+        margin-top: 1.8em;
+        margin-bottom: 0.6em;
+        line-height: 1.2;
+      }
+      .prose p {
+        line-height: 1.625;
+        margin-bottom: 1.5em;
+      }
+      .prose strong {
+        color: #000;
+        font-weight: 700;
+      }
+      
+      /* KaTeX Specific Fixes */
+      .katex {
+        font-size: 1.1em;
+        line-height: 1.2;
+        text-indent: 0;
+        unicode-bidi: isolate;
+        white-space: nowrap;
+      }
+      .katex-display {
+        display: block;
+        margin: 1.5em 0;
+        text-align: center;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding: 0.75em 0;
+      }
+      .prose .katex-display {
+        margin-top: 2em;
+        margin-bottom: 2em;
+      }
+
+      /* Fix for inverted text visibility in dark blocks */
+      .prose-invert {
+        color: #ffffff !important;
+      }
+      .prose-invert p, .prose-invert li, .prose-invert strong, .prose-invert h1, .prose-invert h2, .prose-invert h3 {
+        color: #ffffff !important;
+      }
+      
+      /* Glassmorphism */
+      .glass {
+        background: rgba(255, 255, 255, 0.82);
+        backdrop-filter: saturate(180%) blur(20px);
+        -webkit-backdrop-filter: saturate(180%) blur(20px);
+      }
+
+      .banner-gradient {
+        background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 100%);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "@google/genai": "https://esm.sh/@google/genai@^1.38.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "react-markdown": "https://esm.sh/react-markdown@9.0.1?bundle",
+    "remark-math": "https://esm.sh/remark-math@6.0.0",
+    "rehype-katex": "https://esm.sh/rehype-katex@7.0.0",
+    "remark-gfm": "https://esm.sh/remark-gfm@4.0.0",
+    "katex": "https://esm.sh/katex@0.16.9"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
